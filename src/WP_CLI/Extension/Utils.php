@@ -1,6 +1,6 @@
 <?php
 
-namespace WP_CLI\Extension;
+namespace \WP_CLI\Extension;
 
 class Utils {
 
