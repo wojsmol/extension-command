@@ -1,6 +1,6 @@
 <?php
 
-namespace \WP_CLI\Extension;
+namespace WP_CLI\Extension;
 
 class Utils {
 
@@ -9,7 +9,7 @@ class Utils {
 	 */
 
 	public static function get_template_path( $template ) {
-		$command_root = Utils\phar_safe_path( dirname( __DIR__ ) );
+		$command_root = WP_CLI\Utils\phar_safe_path( dirname( __DIR__ ) );
 		$template_path = "{$command_root}/templates/{$template}";
 
 		if ( ! file_exists( $template_path ) ) {
