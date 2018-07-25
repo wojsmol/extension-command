@@ -13,7 +13,7 @@ class Utils {
 		$template_path = "{$command_root}/templates/{$template}";
 
 		if ( ! file_exists( $template_path ) ) {
-			WP_CLI::error( "Couldn't find {$template}" );
+			\WP_CLI::error( "Couldn't find {$template}" );
 		}
 
 		return $template_path;
